@@ -39,44 +39,49 @@ module.exports = {
     [1, 1, 1],
     [1, 1, 1]
   ],
-  DeadWith8Neighbors: [
+  deadWith8Neighbors: [
     [1, 1, 1],
     [1, 0, 1],
     [1, 1, 1]
   ],
-  DeadWith7Neighbors: [
+  deadWith7Neighbors: [
     [1, 1, 0],
     [1, 0, 1],
     [1, 1, 1]
   ],
-  DeadWith6Neighbors: [
+  deadWith6Neighbors: [
     [1, 1, 0],
     [1, 0, 1],
     [1, 1, 0]
   ],
-  DeadWith5Neighbors: [
+  deadWith5Neighbors: [
     [0, 1, 0],
     [1, 0, 1],
     [1, 1, 0]
   ],
-  DeadWith4Neighbors: [
+  deadWith4Neighbors: [
     [0, 1, 0],
     [1, 0, 0],
     [1, 1, 0]
   ],
-  DeadWith3Neighbors: [
+  deadWith3Neighbors: [
     [0, 1, 0],
     [1, 0, 0],
     [1, 0, 0]
   ],
-  DeadWith2Neighbors: [
+  deadWith2Neighbors: [
     [0, 1, 0],
     [1, 0, 0],
     [0, 0, 0]
   ],
-  DeadWith1Neighbor: [
+  deadWith1Neighbor: [
     [0, 1, 0],
     [0, 0, 0],
     [0, 0, 0]
+  ],
+  onEdgeWith3Neighbors: [
+    [, 1, 0],
+    [, 0, 1],
+    [, 1, 0]
   ]
 }
