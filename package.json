@@ -11,5 +11,8 @@
   "devDependencies": {
     "tap-spec": "^4.1.1",
     "tape": "^4.6.2"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81"
   }
 }
