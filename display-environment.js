@@ -10,7 +10,7 @@ const box = blessed.box({
   height: '100%',
   tags: true,
   style: {
-    fg: 'white',
+    fg: 'yellow',
     bg: 'black'
   }
 })
@@ -27,7 +27,7 @@ function displayEnvironment (environment) {
 function createFrame (environment) {
   let frame = ''
   environment.forEach(row => {
-    const transformed = row.map(node => node ? '0' : ' ')
+    const transformed = row.map(node => node ? '❄' : ' ')
     frame += transformed.join(' ') + '\n'
   })
   return frame
