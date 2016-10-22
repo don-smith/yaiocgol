@@ -7,7 +7,7 @@ Test-first approach to building a console version using JavaScript (Node.js v6).
 
 ## Using
 
-`npm start` to begin. `ESC` key to end.
+After `npm install`, use `npm start` to see a random environment. Press `ESC` key to stop it.
 
 ## Next
 
