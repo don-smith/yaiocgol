@@ -3,7 +3,7 @@ const displayEnvironment = require('./display-environment')
 const getNextGeneration = require('./get-next-generation')
 
 const random = true
-let environment = createEnvironment(40, random)
+let environment = createEnvironment(30, 40, random)
 
 displayEnvironment(environment)
 

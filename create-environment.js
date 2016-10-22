@@ -2,22 +2,22 @@ module.exports = createEnvironment
 
 // Recursion FTW !D
 
-function createEnvironment (size, randomise = false) {
-  return createRows(size, size, randomise)
+function createEnvironment (numRows, numCols, randomise = false) {
+  return createRows(numRows, numCols, numRows, randomise)
 }
 
-function createRows (size, count, randomise, rows) {
+function createRows (numRows, numCols, progress, randomise, rows) {
   rows = rows || []
-  if (count === 0) return rows
-  rows.push(createRow(size, randomise))
-  return createRows(size, --count, randomise, rows)
+  if (progress === 0) return rows
+  rows.push(createRow(numCols, randomise))
+  return createRows(numRows, numCols, --progress, randomise, rows)
 }
 
-function createRow (count, randomise, row) {
+function createRow (progress, randomise, row) {
   row = row || []
-  if (count === 0) return row
+  if (progress === 0) return row
   row.push(randomise ? createRandom() : 0)
-  return createRow(--count, randomise, row)
+  return createRow(--progress, randomise, row)
 }
 
 function createRandom () {
