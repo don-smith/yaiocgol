@@ -4,6 +4,7 @@
   "description": "Life is just a game",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "tape tests/**/*-test.js | tap-spec"
   },
   "author": "Don Smith <don@devacademy.co.nz>",
