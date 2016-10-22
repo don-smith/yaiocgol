@@ -13,11 +13,11 @@ function createRows (size, count, randomise, rows) {
   return createRows(size, --count, randomise, rows)
 }
 
-function createRow (count, randomise, previousItems) {
-  previousItems = previousItems || []
-  if (count === 0) return previousItems
-  previousItems.push(randomise ? createRandom() : 0)
-  return createRow(--count, randomise, previousItems)
+function createRow (count, randomise, row) {
+  row = row || []
+  if (count === 0) return row
+  row.push(randomise ? createRandom() : 0)
+  return createRow(--count, randomise, row)
 }
 
 function createRandom () {
