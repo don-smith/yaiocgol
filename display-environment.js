@@ -25,10 +25,8 @@ function displayEnvironment (environment) {
 }
 
 function createFrame (environment) {
-  let frame = ''
-  environment.forEach(row => {
+  return environment.reduce((frame, row) => {
     const transformed = row.map(node => node ? '❄' : ' ')
-    frame += transformed.join(' ') + '\n'
-  })
-  return frame
+    return frame + transformed.join(' ') + '\n' 
+  }, '')
 }
